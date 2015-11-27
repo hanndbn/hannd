@@ -17,5 +17,6 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext(paths);
         EmployeeDao employeeDao = context.getBean("employeeDaoImpl", EmployeeDao.class);
         System.out.println(employeeDao.getEmployeeCount());
+        System.out.println("END");
     }
 }
